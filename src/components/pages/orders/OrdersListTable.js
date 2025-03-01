@@ -25,7 +25,9 @@ function OrdersListTable() {
         </tbody>
       </table>
       <div>
-          <p className="end">Showing {data.length} from {data.length} data</p>
+        <p className="end">
+          Showing {data.length} from {data.length} data
+        </p>
       </div>
     </div>
   );
@@ -33,21 +35,25 @@ function OrdersListTable() {
 
 function ForMap(props) {
   const { users } = props;
-  return users.map((item) => 
-     <tr>
-          <th className="bodyTh">{item.num}</th>
-          <th className="bodyTh">{item.time}</th>
-          <th className="bodyTh">{item.name}</th>
-          <th className="bodyTh">{item.address}</th>
-          <th className="bodyTh">{item.price}</th>
-          <th className="bodyTh"><span className="bodyThOrder">{item.order}</span></th>
-          <th>
-          <button className="bodyMoreBtn"><Image src="/more.png" width={24} height={24}/></button>
-
-          </th>
-     </tr>
-
-  )
+  return users.map((item) => (
+    <>
+    <tr>
+      <th className="bodyTh">{item.num}</th>
+      <th className="bodyTh">{item.time}</th>
+      <th className="bodyTh">{item.name}</th>
+      <th className="bodyTh">{item.address}</th>
+      <th className="bodyTh">{item.price}$</th>
+      <th className="bodyTh">
+        <span className="bodyThOrder">{item.order}</span>
+      </th>
+      <th>
+        <button className="bodyMoreBtn">
+          <Image src="/more.png" width={24} height={24} alt="gg" />
+        </button>
+      </th>
+    </tr>
+    </>
+  ));
 }
 
 export default OrdersListTable;

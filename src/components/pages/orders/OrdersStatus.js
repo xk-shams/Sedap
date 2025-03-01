@@ -6,7 +6,7 @@ function OrderStatus(props) {
 
   return (
     <div className="status">
-      <Image src="/status.png" width={24} height={24} />
+      <Image src="/status.png" width={24} height={24} alt="gg"/>
       <select className="status-select">
         <option
           style={{

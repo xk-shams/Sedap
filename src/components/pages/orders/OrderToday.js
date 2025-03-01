@@ -6,7 +6,7 @@ function OrderToday(props) {
   const { option } = props;
   return (
     <div className="today">
-      <Image src={"/today.png"} width={24} height={24} />
+      <Image src={"/today.png"} width={24} height={24} alt="gg" />
       <select className="today-select">
         <option
           style={{

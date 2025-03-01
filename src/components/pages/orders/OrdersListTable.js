@@ -25,7 +25,7 @@ function OrdersListTable() {
         </tbody>
       </table>
       <div>
-          <p className="end">Showing 12 from 46 data</p>
+          <p className="end">Showing {data.length} from {data.length} data</p>
       </div>
     </div>
   );

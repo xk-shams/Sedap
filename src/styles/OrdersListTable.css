@@ -51,7 +51,20 @@ tr {
 
 .bodyMoreBtn {
   border: none;
+  height: 24px;
 }
+
+
+.bodyMoreBtn:hover {
+  cursor: pointer;
+  background-color: rgb(224, 224, 224);
+}
+
+.bodyMoreBtn:active {
+  background-color: white;
+}
+
+
 
 .end {
   font-weight: 500;
@@ -60,3 +73,4 @@ tr {
   color: #464255;
   margin-top: 60px;
 }
+

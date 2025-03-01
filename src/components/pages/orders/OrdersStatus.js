@@ -13,10 +13,11 @@ function OrderStatus(props) {
             display: "flex",
             alignItems: "center",
           }}
+          className="option"
         >
           {option}
         </option>
-        <option></option>
+        <option className="option"></option>
       </select>
     </div>
   );
